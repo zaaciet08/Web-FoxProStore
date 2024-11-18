@@ -1,0 +1,329 @@
+/* .listDonHang {
+    display: none;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    padding-top: 2%;
+    flex-direction: column;
+}
+.btn_huy {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #da3a27;
+}
+.btn_xem{
+    color: rgb(3, 163, 25);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+}
+.btn_xem:hover {
+    background-color: #ccc;
+    color: #1fdd0d;
+} 
+.btn_huy:hover{
+    background-color: #ccc;
+    color: #ef402d;
+}
+.btn_duyet{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #066509;
+}
+.btn_duyet:hover{
+    background-color: #ccc; 
+    color: #08ae0e;  
+}
+/* Thay đổi mật khẩu */
+
+/* CSS cho input readonly */
+.products {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.products h2{
+    padding-left: 35%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.products table{
+    width: 100%;
+}
+.products th  {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 5px;
+    color: #575f66;
+    font-size: 18px;
+    font-weight: 700;
+}
+.products td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+    color: #373c40;
+    vertical-align: middle;
+}
+.products td a{
+    text-decoration: none;
+    color: #373c40;
+}
+.products td a:hover{
+    color: #d70018;
+}
+.products th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+
+.products tr:hover {
+    background-color: #f5f5f5;
+}
+.products .img{
+    width: 10%;
+}
+
+.products .img img{
+    width: 50%;
+    height: auto;
+}
+.form__btn{
+    border: none;
+}
+.fa-location-dot{
+    color:#d70018;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+.tab.active {
+    background-color: #4CAF50; /* Màu nền khi tab được chọn */
+    color: white; /* Màu chữ khi tab được chọn */
+}
+.tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.tab-content .timkiem{
+    padding: 1%;
+    font-size: 18px;
+}
+.tab-content .timkiem input{
+    border-radius: 5px;
+    padding: 4px;
+}
+.tab-content .timkiem .btn_find{
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+    font-size: 18px;
+    margin-left: 3%;
+    background-color: none;
+    border-radius: 10%;
+}
+.tab-content.active {
+    display: block;
+}
+.title{
+    color: rgba(6, 160, 231, 0.918);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+}
+.products2{
+    display: flex;
+   flex-wrap: wrap;
+}
+.products2 .form_group{
+    background-color: #e4dfdf;;
+    padding: 20px;
+    border-radius: 10px;
+    margin:15px;
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+}
+.form_group label{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.form_group input{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form_group .image img{
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+.form_group textarea{
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form_group select{
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+.products2 .anhchitiet{
+    width: 44%;
+}
+.anhchitiet .imageChitiet{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imageChitiet img {
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-left: 30px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+.imageChitiet .delete_img{
+    width: 5%;
+    height: 5%;
+    margin-top: 2%;
+    border-radius: 50%;
+    border: none;
+    color: #d70018;
+}
+/* CSS cho nút đóng */
+.closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.return{
+    text-decoration: none;
+    margin: 30%;
+}
+.btn_add{
+    border-radius: 10px;
+    font-size: 18px;
+   
+    cursor: pointer;
+    border: none;
+    padding: 8px 30px;
+    color: #066509;
+    background-color: #ddd;
+}
+.btn_add:hover{
+    color: #1fdd0d;
+}
+
+.table_thanhphan {
+    width: 47%;
+    border-collapse: collapse;
+   margin: 8px 25%;
+   border-radius: 5px;
+   
+   padding: 20px;
+}
+.table_thanhphan h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.table_thanhphan table{
+    width: 100%;
+}
+.table_thanhphan table input{
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+.table_thanhphan th  {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #f2f2f2;
+}
+.table_thanhphan td{
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+.table_thanhphan .head{
+    color: #333333;
+    background-color: #f2f2f2;
+    font-weight: bolder;
+    text-align: start;
+}
+
+.table_thanhphan td:hover {
+    background-color: #f5f5f5;
+}
+.table_thanhphan td .tp{
+    padding-left: 20px;
+}
+.file-input {
+    display: none;
+  }
+  .custom-file-label{
+    cursor: pointer;
+  }
+  
+  /* Thiết lập kiểu cho nhãn tùy chỉnh để thay thế cho nút chọn tệp */
+  
+  

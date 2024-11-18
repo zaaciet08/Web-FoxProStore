@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container_pro {
+    display: flex;
+    margin-left: 5px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative; 
+}
+.banner_whey {
+    position: absolute; /* Đặt phần tử ảnh banner là tuyệt đối để nó không ảnh hưởng đến các phần tử khác */
+    top: 0; /* Nếu bạn muốn đặt banner ở phía trên cùng của .container_pro */
+    left: 0; /* Nếu bạn muốn đặt banner ở phía bên trái của .container_pro */
+    width: 38%; /* Đảm bảo rằng banner chiếm toàn bộ chiều rộng của .container_pro */
+    object-fit: cover;
+    object-position: center;
+    
+}
+img[src='./assets/img/section_hot.png'] {
+    width: 99%; /* Chiều rộng của hình ảnh là 100% của phần tử chứa nó (.container_pro) */
+    height: 427px; /* Chiều cao tự động để duy trì tỉ lệ khung hình gốc */
+    /* Các thuộc tính CSS khác của hình ảnh */
+}
+img[src='./assets/img/massgainer.png'] {
+    width: 95%; /* Chiều rộng của hình ảnh là 100% của phần tử chứa nó (.container_pro) */
+    height: 427px; /* Chiều cao tự động để duy trì tỉ lệ khung hình gốc */
+    /* Các thuộc tính CSS khác của hình ảnh */
+}
+img[src='./assets/img/tangsucben.png'] {
+    width: 95%; /* Chiều rộng của hình ảnh là 100% của phần tử chứa nó (.container_pro) */
+    height: 427px; /* Chiều cao tự động để duy trì tỉ lệ khung hình gốc */
+    /* Các thuộc tính CSS khác của hình ảnh */
+}
+img[src='./assets/img/preworkout.png'] {
+    width: 95%; /* Chiều rộng của hình ảnh là 100% của phần tử chứa nó (.container_pro) */
+    height: 427px; /* Chiều cao tự động để duy trì tỉ lệ khung hình gốc */
+    /* Các thuộc tính CSS khác của hình ảnh */
+}
+.deal { 
+    position: relative;
+    display: inline-block;
+    width:18.5%;
+    height: auto;
+    background-color: #fff;
+    border: 3px solid #ddd;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    margin-bottom: 5px;
+}
+.deal:first-child , .deal:nth-child(2) {
+    margin-left: 38%;
+}
+.deal img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.deal p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.deal .deal__price {
+    font-size: 18px;
+    color: #e44d26;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.deal button {
+    background-color: #da3a27;
+    color: #fff;
+    padding: 9px 9px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    bottom: 6px;
+    right: 13px;
+}
+.deal button:hover {
+    background-color: #e65343;
+}
+.deal .deal__percent{
+    width: 15px;
+    height: 15px;
+    background-color: #da3a27;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 4px;
+    margin-left: 18px;
+}
+.deal .deal__sale_price ,
+.deal .deal__footer{
+    color: grey;
+    font-size: 15px;
+}
+.deal .deal__footer{
+    padding-top: 5px;
+}
+.deal p.additional-info {
+    font-size: 14px;
+    color: #666;
+}
+.deal .deal__heading{
+    color: #333;
+}
+.deal .deal__heading:hover{
+        color:#e44d26;
+}
+.deal .tinhtrang_hethang{
+    width: 5%;
+    height: auto;
+    background-color: #da3a27;
+    color: #fff;
+    padding: 3px 6px 10px 6px;
+    border-radius: 5px 5px 0 0;
+}
+.deal .tinhtrang_conhang{
+    width: 5%;
+    height: auto;
+    background-color: #18b615;
+    color: #fff;
+    padding: 3px 6px 10px 6px;
+    border-radius: 5px 5px 0 0;
+}
+.deal .tinhtrang_saphethang{
+    width: 5%;
+    height: auto;
+    background-color: #fa6c40;
+    color: #fff;
+    padding: 3px 6px 10px 6px;
+    border-radius: 5px 5px 0 0;
+}

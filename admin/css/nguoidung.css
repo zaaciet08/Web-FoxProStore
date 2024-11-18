@@ -1,0 +1,154 @@
+/* .listDonHang {
+    display: none;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.btn_huy {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #da3a27;
+}
+.btn_xem{
+    color: coral;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+}
+.btn_xem:hover {
+    background-color: #ccc;
+    color: #bc4111;
+} 
+.btn_huy:hover{
+    background-color: #ccc;
+    color: #ef402d;
+}
+.btn_duyet{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #066509;
+}
+.btn_duyet:hover{
+    background-color: #ccc; 
+    color: #08ae0e;  
+}
+/* Thay đổi mật khẩu */
+
+/* CSS cho input readonly */
+.products {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.products h2{
+    padding-left: 35%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.products table{
+    width: 100%;
+}
+.products th  {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 5px;
+    color: #575f66;
+    font-size: 18px;
+    font-weight: 700;
+}
+.products td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    color: #373c40;
+}
+.products th {
+    background-color: #f2f2f2;
+}
+
+.products tr:hover {
+    background-color: #f5f5f5;
+}
+.form__btn{
+    border: none;
+}
+.fa-location-dot{
+    color:#d70018;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+.tab.active {
+    background-color: #4CAF50; /* Màu nền khi tab được chọn */
+    color: white; /* Màu chữ khi tab được chọn */
+}
+.tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.tab-content .timkiem{
+    padding: 1%;
+    font-size: 18px;
+}
+.tab-content .timkiem input{
+    border-radius: 5px;
+    padding: 4px;
+}
+.tab-content .timkiem .btn_find{
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+    font-size: 18px;
+    margin-left: 3%;
+    background-color: none;
+    border-radius: 10%;
+}
+.tab-content.active {
+    display: block;
+}
+.title{
+    color: rgba(6, 160, 231, 0.918);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+}

@@ -1,0 +1,75 @@
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 3%;
+}
+
+.sidebar ul li {
+    padding: 20px 0;
+    
+}
+.sidebar ul li:nth-child(even) {
+    background-color: #f2f2f2; /* Đặt màu nền cho hàng chẵn, bạn có thể thay đổi màu theo ý muốn */
+}
+.sidebar ul li a{
+    text-decoration: none;
+}
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+}
+.fa-xmark{
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: 5%;
+}
+/* Hiển thị sidebar khi nó được kích hoạt */
+.sidebar.active {
+    display: block;
+}
+
+/* Định dạng menu danh sách trong sidebar */
+.sidebar.active ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar.active ul li {
+    text-align: center;
+    
+}
+.sidebar.active ul li a{
+    color: black;
+}
+/* CSS thêm màu khi hover */
+.sidebar.active ul li a:hover {
+    color: brown;
+}
+.sidebar h3{
+    font-size: 24px;
+    color: #1c79c5;
+    text-align: center;
+}

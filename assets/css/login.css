@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #0c3b71;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    
+    font-weight: 400;
+    text-rendering: optimizeSpeed;
+   -webkit-font-smoothing: antialiased;
+   -moz-font-smoothing: antialiased;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo__branch {
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* common */
+
+.container {
+    width: 1000px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.login {
+    background: #f8f8f8;
+
+    padding: 15px 0;
+}
+
+.login__inner {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+}
+
+.login__wrap-img {
+    position: relative;
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    background: #acb3ba ;
+    border-radius: 12px 0 0 12px;
+}
+
+.login__img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.login__callout {
+    position: absolute;
+    color: #de5618;
+    bottom: 50px;
+}
+
+.login__callout-link {
+    font-weight: 600;
+    color: #118729
+}
+
+.login__callout-link:hover {
+    text-decoration: underline;
+}
+
+.form__logo {
+    position: absolute;
+    top: 27px;
+    left: 31px;
+}
+
+.login__form {
+    background: #fff;
+    padding: 50px 50px 75px;
+    border-radius: 12px;
+}
+
+.login-form__heading {
+    font-size: 3.0rem;
+    font-weight: 600;
+    
+
+}
+
+.login-form__desc {
+    margin-top: 10px;  
+    color: #08733B;  
+}
+
+.form__group {
+    position: relative;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+
+.form__group:first-of-type {
+    margin-top: 50px;
+}
+
+.form__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    color: #c9d2da;
+    transition: .3s;
+    background: #fff;
+}
+
+/* Vì mặc định background là transparent nên có xin z-index cũng thế thôi */
+
+.form__input {
+    padding: 12px 6px;
+    width: 100%;
+    font-size: 1.6rem;
+    background: transparent;
+    border: none;
+    border: 2px solid #c9d2da;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form__input::placeholder {
+    visibility: hidden;
+}
+
+.form__input:focus + .form__label {
+    top: 0;
+    color: var(--primary-color)
+}
+
+.form__input:focus {
+    border-color: var(--primary-color);
+}
+
+.form__input:not(:placeholder-shown) + .form__label{
+    top: 0;
+    color: var(--primary-color)
+}
+
+.form__input:not(:placeholder-shown) {
+    border-color: var(--primary-color);
+}
+
+.fa-user,
+.fa-lock {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    font-size: 1.8rem;
+    color: #c9d2da;
+}
+
+.form__row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__row .form__group {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    padding: 0;
+    border: none;
+    
+}
+
+[type="checkbox"] {
+   display: none;
+}
+
+
+[type="checkbox"]:checked + .form__label-checkbox::before {
+    background: var(--primary-color);
+}
+
+.form__label-checkbox::before {
+    position:relative;
+    left: 0;
+    top: 10px;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c9d2da;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+
+.form__label-checkbox::after {
+    position: absolute;
+    top: 1px;
+    left: 4px; 
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    rotate: -135deg;
+    display: none;
+}
+
+[type="checkbox"]:checked + .form__label-checkbox::after {
+    display: block;
+}
+.form__forgot {
+    color: var(--primary-color)
+}
+
+.form__forgot:hover {
+    text-decoration: underline;
+}
+
+.form__btn {
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background: #08733B;
+    border: 3px solid transparent;
+    outline: none;
+    border-radius: 8px;
+    transition: .3s;
+    
+}
+
+.form__btn:hover {
+    border: 3px solid #08733B;
+    background: transparent;
+    color: var(--primary-color)
+}
+
+.form__login-with {
+    color: #c9d2da;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px
+}
+
+.form__social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background: transparent;
+}
+
+.form__icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.form__icon-social:first-child {
+    background: #3b5997;
+}
+
+.form__icon-social:nth-child(2) {
+    background: #1cb3ea;
+}
+
+.form__icon-social:last-child {
+    border: 1px solid #c9d2da;
+}
+
+.form__icon-social:hover {
+    opacity: 0.6;
+}
+.banner{
+    width: 100%;
+    padding: 0px 50px;
+    
+}
+.brand {
+ position: relative;
+ width: 100%;
+ height: 475px;
+ overflow: hidden;
+ padding-left: 10px;
+ padding-right: 10px;
+ border-radius: 0px 0px 10px 10px;
+}
+
+.brand img {
+ position: absolute;
+ top: 3px;
+ left: 0;
+ width: 100%;
+ height: auto;
+ opacity: 0;
+ transition: opacity 0.5s ease-in-out;
+}
+
+.brand img.active {
+ opacity: 1;
+}

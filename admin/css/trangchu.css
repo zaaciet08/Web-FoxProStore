@@ -1,0 +1,59 @@
+body{
+    background-image: url(../dark-sunset.jpg);
+    /* backdrop-filter: blur(1px); */
+    z-index: 2;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 15%;
+}
+.container .coin{
+    width: 15%;
+    height: auto;
+    background-color: rgb(35, 206, 249);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    margin-right: 5%;
+}
+.coin .fa-coins{
+    font-size: 50px;
+    color: rgb(198, 198, 5);
+    padding-bottom: 15px;
+}
+.coin .doanhthu{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.coin .tien{
+    font-weight: 600;
+}
+
+.container .sanpham{
+    width: 15%;
+    height: auto;
+    background-color: rgb(226, 74, 74);
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+.sanpham .fa-tag{
+    font-size: 50px;
+    color: rgb(7, 149, 33);
+    padding-bottom: 15px;
+}
+.sanpham .ten{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.sanpham .soluong{
+    font-weight: 600;
+}

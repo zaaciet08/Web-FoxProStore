@@ -1,0 +1,290 @@
+/* .listDonHang {
+    display: none;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    padding-top: 2%;
+    flex-direction: column;
+}
+.btn_huy {
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #da3a27;
+}
+.btn_xem{
+    color: rgb(3, 163, 25);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+}
+.btn_xem:hover {
+    background-color: #ccc;
+    color: #1fdd0d;
+} 
+.btn_huy:hover{
+    background-color: #ccc;
+    color: #ef402d;
+}
+.btn_duyet{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #066509;
+}
+.btn_duyet:hover{
+    background-color: #ccc; 
+    color: #08ae0e;  
+}
+.btn_update{
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 7px;
+    transition-duration: .2s;
+    cursor: pointer;
+    min-width: 70px;
+    border: none;
+    color: #066509;
+}
+.btn_update:hover{
+    background-color: #ccc; 
+    color: #08ae0e;  
+}
+/* Thay đổi mật khẩu */
+
+/* CSS cho input readonly */
+.products {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.products h2{
+    padding-left: 35%;
+    font-size: 26px;
+    font-weight: bold;
+}
+.products table{
+    width: 100%;
+}
+.products th  {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 5px;
+    color: #575f66;
+    font-size: 18px;
+    font-weight: 700;
+}
+.products td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+    color: #373c40;
+    vertical-align: middle;
+}
+.products td:first-child{
+    width: 25%;
+}
+.products td:nth-child(2){
+    width: 25%;
+}
+.products td:nth-child(3){
+    width: 35%;
+}
+.products td:last-child{
+    width: 15%;
+}
+.products td img{
+    width: 50%;
+}
+.products th {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+
+.products tr:hover {
+    background-color: #f5f5f5;
+}
+.products .img{
+    width: 10%;
+}
+
+.products .img img{
+    width: 50%;
+    height: auto;
+}
+.form__btn{
+    border: none;
+}
+.fa-location-dot{
+    color:#d70018;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+.tab.active {
+    background-color: #4CAF50; /* Màu nền khi tab được chọn */
+    color: white; /* Màu chữ khi tab được chọn */
+}
+.tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.tab-content .timkiem{
+    padding: 1%;
+    font-size: 18px;
+}
+.tab-content .timkiem input{
+    border-radius: 5px;
+    padding: 4px;
+}
+.tab-content .timkiem .btn_find{
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+    font-size: 18px;
+    margin-left: 3%;
+    background-color: none;
+    border-radius: 10%;
+}
+.tab-content.active {
+    display: block;
+}
+.title{
+    color: rgba(6, 160, 231, 0.918);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5%;
+}
+.add_dm{
+    display: flex;
+    padding: 3%;
+}
+.add_dm .form_group input{
+   padding: 10px;
+   border-radius: 5px;
+}
+.add_dm .form_group textarea{
+    border-radius: 5px;
+}
+.add_dm button{
+    height: 35px;
+}
+.add_dm .form_group{
+    margin-right: 5%;
+}
+.add_dm .form_group label{
+    font-weight: bold;
+}
+/* CSS cho modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 10px;
+  }
+  .modal-content input{
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+  .modal-content textarea{
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+  .modal-content label{
+    font-weight: bold;
+  }
+  .modal-content h2{
+    color: #da3a27;
+    padding: 50px;
+    margin-left: 180px;
+  }
+  .modal-content button{
+    margin-left: 40%;
+  }
+  .update{
+    margin-left: 50px;
+    display: flex;
+    margin-bottom: 40px;
+  }
+  /* Đóng modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .file-input {
+    display: none;
+  }
+  .custom-file-label{
+    cursor: pointer;
+  }
+  .form_group .image img{
+    margin-top: 10px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-left: 40px;
+} 
+
